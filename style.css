@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+*{
+  padding: 0;
+	margin: 0;
+    font-family: 'Nerko One', cursive;
+    box-sizing: border-box;
+    background-color: rgb(150, 240, 240);
+}
+
+#image1{
+    height: 400px;
+    width: 450px;
+}
+
+#image2{
+    height: 400px;
+    width: 500px;
+}
+
+#image3{
+    height: 400px;
+    width: 500px;
+}
+
+#image4{
+    height: 400px;
+    width: 500px;
+}
+
+#image5{
+    height: 400px;
+    width: 500px;
+}
+.float-right{
+	float: right;
+}
+
+.fa{
+  	font-size: .15em;
+	line-height: 16px;
+}
+
+dropdown{
+	display: inline-block;
+	margin: 20px 50px;
+}
+
+dropdown label, dropdown{
+	display: block;
+	width: 200px;
+	background: #f3f596;
+	padding: 15px 20px;
+}
+
+dropdown label:hover, dropdown ul li:hover{
+	background: #ee5dee;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+dropdown label{
+	color: #446CB3;
+	border-left: 4px solid #446CB3;
+	border-radius: 0px 10px 0px 10px;
+	position: relative;
+}
+
+dropdown input{
+	visibility: hidden;
+}
+
+dropdown input ~ ul{
+	position: relative;
+	visibility: hidden;
+	opacity: 0;
+	top: -10px;
+	z-index: 1;
+	border-radius: 5px 5px 5px 5px;
+}
+
+dropdown input:checked + label{
+	background: #446CB3;
+	color: rgb(250, 250, 250);
+}
+
+dropdown input:checked ~ ul{
+	visibility: visible;
+	opacity: 1;
+	top: 0;
+}
+
+.drop{
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+}
+#align{
+    text-align: center;
+}
+p{
+   text-align: justify;
+   margin: 50px;
+}
